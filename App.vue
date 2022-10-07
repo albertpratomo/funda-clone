@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-4">
+    <div class="container p-4">
         <header>
             <NuxtLink
                 class="text-2xl font-bold"
