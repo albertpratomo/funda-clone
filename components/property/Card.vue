@@ -11,19 +11,24 @@ defineProps({
 </script>
 
 <template>
-    <div>
-        <img
-            :alt="property.Adres"
-            class="rounded-lg"
-            loading="lazy"
-            :src="property.FotoLarge"
-        >
+    <NuxtLink
+        class="group"
+        :to="`/properties/${property.Id}`"
+    >
+        <div class="overflow-hidden rounded-lg">
+            <img
+                :alt="property.Adres"
+                class="transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                :src="property.FotoLarge"
+            >
+        </div>
 
         <h2 class="mt-2 font-semibold">
             {{ property.Adres }}
         </h2>
 
-        <h4 class="mt-1 text-sm">
+        <h4 class="text-sm">
             {{ property.Postcode }} {{ property.Woonplaats }}
         </h4>
 
@@ -37,5 +42,5 @@ defineProps({
             class="mt-2 text-sm font-semibold"
             v-html="property.PrijsGeformatteerdHtml"
         />
-    </div>
+    </NuxtLink>
 </template>

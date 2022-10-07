@@ -9,3 +9,4 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 1. Implement pagination for the search results
 1. Implement advanced search and filtering
 1. Implement responsive `<img srcset>`
+1. Lazy load images
