@@ -10,9 +10,15 @@ interface Property {
     Id: string;
     Media: Media[];
     Postcode: string;
+    PrijsGeformatteerd: string;
     PrijsGeformatteerdHtml: string;
+    URL: string;
+    // TODO: Refactor API so that it returns consistent JSON keys.
+    PerceelOppervlakte: number;
     Perceeloppervlakte: number;
+    Plaats: string;
     Woonplaats: string;
+    WoonOppervlakte: number;
     Woonoppervlakte: number;
 }
 

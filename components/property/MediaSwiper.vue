@@ -38,13 +38,13 @@ const swiper = ref();
 
         <CommonButtonChevron
             v-if="swiper"
-            class="absolute left-2 top-1/2 z-10 hidden -translate-y-1/2 rotate-180 opacity-20 transition-opacity group-hover:opacity-80 lg:flex"
+            class="inset-y-center left-2 z-10 hidden rotate-180 opacity-20 transition-opacity group-hover:opacity-80 lg:flex"
             @click="swiper.slidePrev()"
         />
 
         <CommonButtonChevron
             v-if="swiper"
-            class="absolute right-2 top-1/2 z-10 hidden -translate-y-1/2 opacity-20 transition-opacity group-hover:opacity-80 lg:flex"
+            class="inset-y-center right-2 z-10 hidden opacity-20 transition-opacity group-hover:opacity-80 lg:flex"
             @click="swiper.slideNext()"
         />
 
