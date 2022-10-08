@@ -54,12 +54,18 @@ const {data: property, pending} = await useFetch<Property>(endpoint, {
             v-html="property.PrijsGeformatteerd"
         />
 
-        <NuxtLink
-            class="btn-black mt-3 w-full"
-            target="_blank"
-            :to="property.URL"
-        >
-            See more details
-        </NuxtLink>
+        <div class="mt-4 whitespace-pre-line text-sm">
+            {{ property.VolledigeOmschrijving }}
+        </div>
+
+        <div class="sticky bottom-0 mt-3 bg-white py-4">
+            <NuxtLink
+                class="btn-black w-full"
+                target="_blank"
+                :to="property.URL"
+            >
+                See more details
+            </NuxtLink>
+        </div>
     </div>
 </template>

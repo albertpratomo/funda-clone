@@ -17,6 +17,7 @@ interface Property {
     PerceelOppervlakte: number;
     Perceeloppervlakte: number;
     Plaats: string;
+    VolledigeOmschrijving: string;
     Woonplaats: string;
     WoonOppervlakte: number;
     Woonoppervlakte: number;
