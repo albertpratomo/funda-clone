@@ -15,7 +15,7 @@ const {data: property, pending} = await useFetch<Property>(endpoint, {
     <div v-if="property">
         <PropertyMediaGrid :property="property" />
 
-        <h1 class="mt-6 text-3xl font-semibold">
+        <h1 class="mt-4 text-3xl font-semibold">
             {{ property.Adres }}
         </h1>
 
@@ -54,9 +54,11 @@ const {data: property, pending} = await useFetch<Property>(endpoint, {
             v-html="property.PrijsGeformatteerd"
         />
 
-        <div class="mt-4 max-w-xl whitespace-pre-line text-sm">
-            {{ property.VolledigeOmschrijving }}
-        </div>
+        <CommonTextTruncated
+            class="mt-4 max-w-xl text-sm"
+            :text="property.VolledigeOmschrijving"
+            untruncrate-text="Read the full description"
+        />
 
         <div class="sticky bottom-0 mt-3 bg-white py-4">
             <NuxtLink

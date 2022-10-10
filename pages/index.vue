@@ -23,7 +23,7 @@ const {data, pending} = await useFetch<Data>(endpoint, {
             placeholder="City, neighborhood, address, etc."
         />
 
-        <div class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8 pb-4 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
             <PropertyCard
                 v-for="property in data?.Objects"
                 :key="property.Id"
