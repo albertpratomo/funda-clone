@@ -54,7 +54,7 @@ const {data: property, pending} = await useFetch<Property>(endpoint, {
             v-html="property.PrijsGeformatteerd"
         />
 
-        <div class="mt-4 whitespace-pre-line text-sm">
+        <div class="mt-4 max-w-xl whitespace-pre-line text-sm">
             {{ property.VolledigeOmschrijving }}
         </div>
 
