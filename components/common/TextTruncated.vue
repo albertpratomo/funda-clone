@@ -28,7 +28,6 @@ const truncated = ref(true);
                 <div class="h-12 bg-gradient-to-t from-white" />
 
                 <button
-
                     class="flex w-full items-center bg-white font-medium"
                     @click="truncated = false"
                 >

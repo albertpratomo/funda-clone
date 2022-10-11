@@ -1,4 +1,3 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: [
         'swiper/css',
@@ -9,6 +8,7 @@ export default defineNuxtConfig({
     },
     vite: {
         server: {
+            // Proxy the funda API endpoint to get around the CORS restriction.
             proxy: {
                 '/api': {
                     target: 'https://partnerapi.funda.nl',
