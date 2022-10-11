@@ -38,9 +38,11 @@ defineProps({
             • {{ property.AantalKamers }} rooms
         </div>
 
+        <!-- eslint-disable vue/no-v-html -->
         <div
             class="mt-2 text-sm font-semibold"
             v-html="property.PrijsGeformatteerdHtml"
         />
+        <!-- eslint-enable vue/no-v-html -->
     </NuxtLink>
 </template>

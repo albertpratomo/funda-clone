@@ -10,9 +10,7 @@ const props = defineProps({
     },
 });
 
-const emit = defineEmits<{
-    (e: 'update:modelValue', value: typeof props['modelValue']): void
-}>();
+const emit = defineEmits<{(e: 'update:modelValue', value: typeof props['modelValue']): void}>();
 
 const debouncedUpdate = useDebounceFn(
     e => emit('update:modelValue', e.target.value),

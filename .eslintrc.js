@@ -36,7 +36,6 @@ module.exports = {
         'object-curly-spacing': ['error', 'never'],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
-        'sort-imports': 'error',
         'space-before-function-paren': ['error', 'never'],
         'space-in-parens': 'error',
         'space-infix-ops': 'error',

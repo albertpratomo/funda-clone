@@ -53,11 +53,13 @@ const {data: property, pending} = await useFetch<Property>(endpoint, {
                         rooms
                     </div>
                 </div>
+                <!-- eslint-disable vue/no-v-html -->
 
                 <div
                     class="mt-4 text-xl font-semibold lg:hidden"
                     v-html="property.PrijsGeformatteerd"
                 />
+                <!-- eslint-enable vue/no-v-html -->
 
                 <CommonTextTruncated
                     class="mt-4 max-w-xl text-sm"
@@ -68,10 +70,12 @@ const {data: property, pending} = await useFetch<Property>(endpoint, {
 
             <div class="hidden lg:block lg:text-right">
                 <div class="sticky top-4">
+                    <!-- eslint-disable vue/no-v-html -->
                     <div
                         class="text-2xl font-semibold"
                         v-html="property.PrijsGeformatteerd"
                     />
+                    <!-- eslint-enable vue/no-v-html -->
 
                     <NuxtLink
                         class="btn-black mt-4 w-full"
