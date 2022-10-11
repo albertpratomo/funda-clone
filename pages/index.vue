@@ -24,11 +24,22 @@ const {data, pending} = await useFetch<Data>(endpoint, {
         />
 
         <div class="grid grid-cols-1 gap-x-4 gap-y-8 pb-4 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
+            <div
+                v-if="pending"
+                class="flex-center col-span-full"
+            >
+                <IconSpinner />
+            </div>
+
             <PropertyCard
                 v-for="property in data?.Objects"
                 :key="property.Id"
                 :property="property"
             />
+
+            <div v-if="!pending && data?.Objects.length === 0">
+                No properties found for the search keyword "{{ searchKeyword }}".
+            </div>
         </div>
     </div>
 </template>
