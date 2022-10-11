@@ -17,7 +17,7 @@ const truncated = ref(true);
     <div>
         <div
             class="relative whitespace-pre-line"
-            :class="{'h-28 overflow-hidden': truncated}"
+            :class="{'h-[30vh] overflow-hidden': truncated}"
         >
             {{ text }}
 
