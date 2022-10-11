@@ -1,5 +1,6 @@
 # Funda Clone
 
+![image](https://user-images.githubusercontent.com/25815584/194979298-70002e74-241d-4bd7-a9db-5f4d2861faeb.png)
 ![image](https://user-images.githubusercontent.com/25815584/194973859-df6de17f-a2d6-4d53-a514-4680b69d50a2.png)
 
 This is a simple clone of [funda](https://funda.nl/). The main features are searching for a property and displaying details of a property. The design is inspired by Airbnb. The tech stack used: Nuxt 3, Vue 3, Typescript, Tailwind.
