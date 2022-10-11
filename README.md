@@ -13,6 +13,7 @@ This is a simple clone of [funda](https://funda.nl/), you can see the app live [
 
 ## Refactor List
 1. Use vue-i18n instead of hardcoding texts
+1. Store API key and domain in `.env`
 1. Extract duplicated markup into small reusable components
 1. Implement responsive `<img srcset>`
 1. Lazy load images
