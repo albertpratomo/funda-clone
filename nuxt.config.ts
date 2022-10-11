@@ -3,6 +3,9 @@ export default defineNuxtConfig({
         'swiper/css',
     ],
     modules: ['@nuxtjs/tailwindcss'],
+    nitro: {
+        preset: 'vercel',
+    },
     tailwindcss: {
         injectPosition: 'last',
     },
