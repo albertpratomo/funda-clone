@@ -20,7 +20,7 @@ const swiper = ref();
 <template>
     <Swiper
         auto-height
-        class="group relative"
+        class="group relative rounded-lg"
         loop
         @swiper="swiper = $event"
     >
