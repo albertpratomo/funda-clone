@@ -2,23 +2,23 @@ export default defineNuxtConfig({
     css: [
         'swiper/css',
     ],
-    modules: ['@nuxtjs/tailwindcss'],
-    nitro: {
-        preset: 'vercel',
-    },
+    modules: [
+        '@nuxtjs/tailwindcss',
+        'nuxt-proxy',
+    ],
     tailwindcss: {
         injectPosition: 'last',
     },
-    vite: {
-        server: {
-            // Proxy the funda API endpoint to get around the CORS restriction.
-            proxy: {
-                '/api': {
-                    target: 'https://partnerapi.funda.nl',
-                    changeOrigin: true,
-                    rewrite: path => path.replace(/^\/api/, ''),
-                },
+    proxy: {
+        options: {
+            target: 'https://partnerapi.funda.nl',
+            changeOrigin: true,
+            pathRewrite: {
+                '^/api/': '/',
             },
+            pathFilter: [
+                '/api/',
+            ],
         },
     },
 });

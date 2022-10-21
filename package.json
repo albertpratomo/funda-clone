@@ -20,6 +20,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-vue": "^9.6.0",
     "nuxt": "3.0.0-rc.11",
+    "nuxt-proxy": "^0.2.4",
     "swiper": "^8.4.3",
     "typescript": "^4.8.4"
   }
