@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+    app: {
+        head: {
+            title: 'Funda Clone',
+            link: [{rel: 'icon', type: 'image/png', href: '/favicon.png'}],
+        },
+    },
     css: [
         'swiper/css',
     ],
